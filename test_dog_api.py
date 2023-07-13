@@ -1,4 +1,5 @@
 import pytest
+import requests
 
 
 class TestDog:
@@ -57,3 +58,13 @@ class TestDog:
 
         else:
             assert False, 'Something wrong'
+
+    def test_breeds_list_size(self):
+        # Тест проверяет, что размер списка всех пород собак соответствует ожидаемому значению.
+
+        response = requests.get('https://dog.ceo/api/breeds/list/all')
+        response_breeds_list = response.json()
+
+        expected_breeds_count = 98
+        actual_breeds_count = len(response_breeds_list['message'])
+        assert actual_breeds_count == expected_breeds_count, f'Expected {expected_breeds_count} breeds, but got {actual_breeds_count}'
