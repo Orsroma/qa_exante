@@ -6,11 +6,11 @@
 Инструкция по запуску тестов:
 
 1. Скопируйте проект в директорию:
- git clone https://github.com/qa_exante/qa_exante.git
+"git clone https://github.com/qa_exante/qa_exante.git"
 2. Перейдите в директорию c тестами:
-~ cd qa_exante
+~ "cd qa_exante"
 3. Запустите тесты c флагами:
-~ pytest -v -s
+~ "pytest -v -s"
 
 
 
