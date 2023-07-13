@@ -5,13 +5,13 @@
 
 Инструкция по запуску тестов:
 
-Скопируйте проект в директорию:
-~ git clone https://github.com/qa_exante/qa_exante.git
-Перейдите в директорию c тестами:
+1. Скопируйте проект в директорию:
+ git clone https://github.com/qa_exante/qa_exante.git
+2. Перейдите в директорию c тестами:
 ~ cd qa_exante
-Обновите pip до последней версии:
+3. Обновите pip до последней версии:
 ~ pip install --upgrade pip
-Запустите тесты c флагами:
+4. Запустите тесты c флагами:
 ~ pytest -v -s
 
 
